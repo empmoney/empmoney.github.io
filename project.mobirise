@@ -1,0 +1,163 @@
+{
+  "settings": {
+    "name": "empmoney",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#02000d"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/emp-logo.png",
+    "mbrsiteDomain": "wstt7kjl9d",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Emp Money",
+        "meta_descr": "Emp Money | ETH pegged algocoin. 08.14.2022. The EMP team hosts AMA’s on YouTube at 10:45pm UTC 🎤 Check out our latest AMA featuring our main host AJ.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#02000d\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/emp-money.png\" alt=\"EMP Money\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "teLr8KoEQx",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image3-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background7.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#02000d\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>How EMP Money Makes Continuous Earning on Crypto Possible.</b><br><b><br></b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">What is EMP Money?\n<div><br></div></h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">EMP Money is a revolutionary DeFi protocol on BNB Chain, with their EMP token algorithmically pegged to the value of Ethereum (ETH) at a rate of 4,000 EMP to 1 ETH. This EMP pegging mechanism is so important that it lays the foundation for the entire economy of the DeFi dapp.&nbsp;<br>In the pegging mechanism of EMP, the liquidity and price volatility do not pose a risk to EMP but rather bring value to EMP’s economic model. So how does it work? \n<br>\n<br>When EMP’s price is above peg, the protocol emits new EMP tokens to inflate the supply, bringing the price down toward the peg. These new EMPs will go into circulation through the Boardroom, the money printer of the ecosystem. Later, the Boardroom will distribute the newly printed EMPs to EMP Shares (ESHARE) holders. \n<br>\n<br>If the opposite happens, the protocol will issue EMP Bonds (EBONDs) and remove EMPs from the total supply. This will drive up the price towards the peg. Users can redeem EBONDs for EMPs at a premium when the price is above the peg. \n<br>\n<br><b>EMP Money tokenomics explained \n</b><br>EMP Money boasts a multi-token ecosystem in which EMP, ESHARE, and EBOND form a sustainable economic system. \n<br>\n<br>EMP\n<br>The EMP algorithmic token serves as the backbone of EMP Money‘s fast-growing ecosystem and is used as a medium of exchange. As mentioned previously, the pegging mechanism in the protocol aims to maintain the exchange ratio of 4,000 EMP to 1 ETH in the long run. \n<br>\n<br>However, that does not mean EMP will always be valued at 4,000 to 1 against ETH, as EMP is not collateralized. Most importantly, such a dynamic balance is a prerequisite for the EMP economy to run its course and allows for the application of two other tokens.\n<br>\n<br>ESHARE\n<br>ESHARE is the governance token of EMP’s DeFi ecosystem. Therefore, holding ESHARE grants users voting rights on proposals such as protocol improvement and use case expansion within the ecosystem. Additionally, ESHARE holders have the privilege of receiving future EMP distribution when the EMP price exceeds the peg.\n<br>\n<br>\n<br>EMP Money earn eshare\n<br>EBOND\n<br>EBOND is another essential incentive token that the system issues. When EMP falls below the peg, EMP Money creates EBONDs for users at the current price of EPM. Moreover, converting EMP into EBOND burns EMP tokens, taking them out of circulation. As a result, it helps drive the price up. \n<br>\n<br>To gain profit from EBONDs, users can redeem them for EMP when their price is above the peg in the future. It’s worth mentioning that EBONDs do not have expiration dates. It means holders can redeem their EBONDs for EMP tokens anytime they want, as long as the Treasury has a positive EMP balance.\n<br>\n<br>Maximize profit with EMP Money\n<br>EMP Money allows users to interact directly with the DeFi protocol while providing a great way to learn about this emerging industry. Adhering to this vision, EMP Money focuses on providing users with a variety of opportunities to grow their crypto portfolios at managed risks. Now, let’s take a closer look at what DeFi products are in the EMP Money ecosystem.\n<br>\n<br>Ethereum 3.0 Staking Contract\n<br>Ethereum 3.0 Staking Contract created a new avenue for extracting the value of ETH. It allows users to stake BEP-20 ETH and generate 19% fixed interest on the investor’s principal per quarter (90 days). Furthermore, the claim is paid in BEP-20 ETH and is compoundable. \n<br>\n<br>But what is a BEP-20 token? BEP-20 is a token standard on Binance Smart Chain that extends ERC-20, which is derived from the Ethereum blockchain. Therefore, it inherits all the ERC-20 features. BEP-20 tokens are compatible with ERC-20 but require much cheaper gas fees. \n<br>\n<br>Detonator\n<br>Detonator gives users an opportunity to earn 365% ROI using EMP-ETH Liquidity Pool (LP) tokens. This is a gamified smart contract on the BNB Smart Chain in which participants can reap surprising bonuses, the Daily Lotto, and the Largest Depositor Prize. The system hands out one prize to the lottery winner and one to the person who deposits the biggest amount into the contract for the day.\n<br>\n<br>Autovaults\n<br>EMP Money also brings lucrative benefits to its community by expanding its network of partners. Autovaults offers users such a chance. EMP Money’s partners host Autovaults and users can leverage these auto-compounding vaults to harvest ESHARE tokens as well. \n<br>\n<br>However, they work slightly from those native Farms on EMP Money’s platform. Instead of depositing ESHAREs into users’ wallets, the auto-compounders will automatically sell the earned ESHAREs and buy more LP tokens to auto-compound the profit. As a result, it helps users collect more and more LP tokens.\n<br>\n<br>EMP Money has introduced various ways to profit in its DeFi ecosystem. Users can join nightly AMA or through the following channels to learn more about EMP Money.&nbsp;<br><br></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "teLr9OZSG6",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header2-1"
+        }
+      ]
+    }
+  }
+}
